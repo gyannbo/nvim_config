@@ -15,8 +15,8 @@ nmap j jzz
 nmap G Gzz
 nmap K :m-2
 nmap J :m+ 
-vnoremap K :m-2gv
-vnoremap J :m'>+1gv
+vnoremap K :m-2gv	"there is <enter> character before gv entere via ctrl-v in insert mode (doesnt show up on github)
+vnoremap J :m'>+1gv  "there is <enter> character before gv entere via ctrl-v in insert mode (doesnt show up on github)
 
 " put func in header macro
 let @a = 'Vy  :tabe *.hGkpA;'
