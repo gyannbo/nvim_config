@@ -9,14 +9,17 @@ set mouse=a
 set tabstop=4
 set shiftwidth=4
 syntax off
-nmap gy gT
-nmap k kzz
-nmap j jzz
-nmap G Gzz
-nmap K :m-2
-nmap J :m+ 
-vnoremap K :m-2gv	"there is <enter> character before gv entere via ctrl-v in insert mode (doesnt show up on github)
-vnoremap J :m'>+1gv  "there is <enter> character before gv entere via ctrl-v in insert mode (doesnt show up on github)
+nmap gy gT		" pouvoir faire inverse de gt 
+nmap k kzz		" centrer le curseur
+nmap J jzz		" centrer le curseur
+nmap G Gzz		" centrer le curseur
+nmap K :m-2	" bouger ligne vers le haut
+nmap J :m+ 	" bouger ligne vers le bas
+vnoremap K :m-2gv		" bouger bloc vers le haut
+vnoremap J :m'>+1gv		" bouger bloc vers le haut
+
+nmap co 0i//j	" commenter
+nmap oc 0xxk	" enlever les commenter
 
 " put func in header macro
 let @a = 'Vy  :tabe *.hGkpA;'
@@ -27,9 +30,4 @@ let @d = 'A	int	i;	i = 0;	'
 "put c brackets
 let @q = 'A{}kA	'
 
-
-nmap co 0i//j
-nmap oc 0xxk
-
-
-" check if i can move by blocks to the right and left
+" ctrl-v pour insérer des characteres non printable
