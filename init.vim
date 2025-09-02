@@ -11,7 +11,7 @@ set shiftwidth=4
 syntax off
 nmap gy gT		" pouvoir faire inverse de gt 
 nmap k kzz		" centrer le curseur
-nmap J jzz		" centrer le curseur
+nmap j jzz		" centrer le curseur
 nmap G Gzz		" centrer le curseur
 nmap K :m-2	" bouger ligne vers le haut
 nmap J :m+ 	" bouger ligne vers le bas
